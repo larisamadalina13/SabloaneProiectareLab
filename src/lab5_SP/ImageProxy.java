@@ -32,12 +32,7 @@ public class ImageProxy implements Element {
 		
 		if(image == null) 
 		{
-			try {
-				image = new Image(name);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			image = new Image(name);
 		}
 		
 		image.print();

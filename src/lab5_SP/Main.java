@@ -64,7 +64,7 @@ public class Main {
 		*/
 		
 		//lab 7
-		Section cap1 = new Section("Capitolul 1");
+		/*Section cap1 = new Section("Capitolul 1");
 		Paragraph p1 = new Paragraph("Paragraph 1");
 		cap1.add(p1);
 		Paragraph p2 = new Paragraph("Paragraph 2");
@@ -80,8 +80,14 @@ public class Main {
 					
 		BookStatistics stats = new BookStatistics();
 		cap1.accept(stats);
-				stats.printStatistics();
-		
+				stats.printStatistics();*/
+				
+		//lab 8
+		Builder jsonBuilder = new JSONBuilder("D:\\Facultate\\ANUL 3\\SP\\book.json");
+		jsonBuilder.build();
+		Element myBook = jsonBuilder.getResult();
+		myBook.print();		
+				
 		
 	}
 }
